@@ -1,24 +1,21 @@
-/* Ensure the body takes up full height */
 html, body {
-  height: 100%; /* Full height */
-  margin: 0; /* Remove default margin */
+  height: 100%;
+  margin: 0;
 }
 
-/* Centering the App */
 .App {
-  display: flex; /* Enable flexbox */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  min-height: 100vh; /* Full viewport height */
-  padding: 20px; /* Maintain existing padding */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh; 
+  padding: 20px;
 }
 
-/* Existing styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
-  text-align: center; /* Center text */
+  text-align: center; 
 }
 
 h1 {
@@ -76,43 +73,40 @@ button:hover {
   color: #fff;
 }
 
-/* Button styles */
 .search-component button {
-  background-color: #007bff; /* Set the default background color */
-  color: white; /* Set the default text color */
-  border: none; /* Remove the border */
-  padding: 10px 20px; /* Add padding for better appearance */
-  cursor: pointer; /* Show the pointer on hover */
-  border-radius: 5px; /* Optional: Rounded corners */
-  font-size: 16px; /* Optional: Font size */
-  transition: background-color 0.3s ease; /* Optional: Smooth transition */
+  background-color: #007bff; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; 
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-/* Hover effect for button */
 .search-component button:hover {
-  background-color: #0056b3; /* Darken the color on hover */
+  background-color: #0056b3;
 }
 html, body {
-  height: 100%; /* Full height */
-  margin: 0; /* Remove default margin */
-  display: flex; /* Enable flexbox for centering */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background-color: #f4f4f9; /* Optional: background color */
+  height: 100%; 
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #f4f4f9; 
 }
 
-/* A4 page dimensions (in mm, converted to pixels) */
 .a4-container {
-  width: 210mm; /* A4 width */
-  height: 297mm; /* A4 height */
-  padding: 20px; /* Add padding for inner spacing */
+  width: 210mm;
+  height: 297mm; 
+  padding: 20px;
   margin-top: 220px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow effect */
-  background-color: #fff; /* White background for the page */
-  display: flex; /* Enable flexbox */
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  overflow: hidden; /* Prevent overflow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  background-color: #fff; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  overflow: hidden;
 }
 
 /* Existing styles */
