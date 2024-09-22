@@ -1,4 +1,3 @@
-// src/components/TemperatureToggle.jsx
 import React from 'react';
 
 const TemperatureToggle = ({ unit, setUnit }) => {
