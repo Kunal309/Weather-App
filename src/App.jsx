@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState, useEffect } from 'react';
 import WeatherInfo from './components/WeatherInfo';
 import SearchComponent from './components/SearchComponent';
@@ -10,14 +9,12 @@ const App = () => {
   const [city, setCity] = useState('New York');
   const [weatherData, setWeatherData] = useState(null);
   const [forecastData, setForecastData] = useState(null);
-  const [unit, setUnit] = useState('metric'); // 'metric' for Celsius, 'imperial' for Fahrenheit
+  const [unit, setUnit] = useState('metric'); 
 
-  // src/App.jsx
 const fetchWeatherData = async (city, unit) => {
   try {
-    const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; // Get the API key
+    const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
 
-    // Fetch current weather data
     const weatherResponse = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=${unit}`
     );
@@ -31,7 +28,6 @@ const fetchWeatherData = async (city, unit) => {
     const weather = await weatherResponse.json();
     setWeatherData(weather);
 
-    // Fetch 5-day forecast data
     const forecastResponse = await fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=${unit}`
     );
@@ -46,7 +42,7 @@ const fetchWeatherData = async (city, unit) => {
     setForecastData(forecast);
   } catch (error) {
     console.error("Error fetching weather data: ", error.message);
-    alert(error.message); // Display user-friendly error
+    alert(error.message);
   }
 };
 
