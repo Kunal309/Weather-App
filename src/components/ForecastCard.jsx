@@ -1,4 +1,3 @@
-// src/components/ForecastCard.jsx
 import React from 'react';
 
 const ForecastCard = ({ forecast }) => {
