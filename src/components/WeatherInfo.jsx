@@ -1,4 +1,3 @@
-// src/components/WeatherInfo.jsx
 import React from 'react';
 
 const WeatherInfo = ({ data }) => {
